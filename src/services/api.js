@@ -1,5 +1,5 @@
-// API base URL - change this to match your backend server
-const API_BASE_URL = 'https://focused-kindness-production.up.railway.app/api';
+// API base URL - uses environment variable for flexibility
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://focused-kindness-production.up.railway.app/api';
 
 // Get auth token from localStorage
 const getAuthToken = () => {
