@@ -1,0 +1,387 @@
+/* Payment Report Style Popup Design - Universal Modal System */
+
+/* Modal Overlay - Exactly like PaymentReport */
+.action-popup-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1000 !important;
+  backdrop-filter: none;
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Action Popup - Payment Report Style */
+.action-popup {
+  background: transparent !important;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  min-width: 350px;
+  position: relative !important;
+  box-shadow: none;
+  border: none;
+  margin: auto !important;
+  transform: none !important;
+  left: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  max-height: 90vh;
+  overflow-y: auto;
+  min-height: auto;
+}
+
+/* Modal Header - Payment Report Style */
+.popup-header {
+  display: none !important;
+}
+
+.popup-header h3::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #1e40af;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Close Button - Payment Report Style */
+.btn-close {
+  background: none !important;
+  border: none;
+  font-size: 1.5rem;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  backdrop-filter: none !important;
+  z-index: auto !important;
+}
+
+.btn-close:hover {
+  color: #1e40af;
+  background: #e5e7eb;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Modal Content - Payment Report Style */
+.popup-content {
+  padding: 0 !important;
+  background: transparent;
+  max-height: none !important;
+  overflow-y: visible !important;
+  min-height: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* Form Layout - Payment Report Style */
+.popup-form-row {
+  display: none !important;
+}
+
+.popup-form-row .popup-field {
+  display: none !important;
+}
+
+/* Form Fields - Payment Report Style */
+.popup-field {
+  display: none !important;
+}
+
+.popup-field label,
+.popup-field strong {
+  color: #374151;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: block;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Field Values - Payment Report Style */
+.popup-field .field-value {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: #1e293b;
+  font-weight: 400;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup-field .field-value:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+/* Form Inputs - Payment Report Style */
+.popup-field input,
+.popup-field select {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: #374151;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 56px;
+}
+
+.popup-field input:focus,
+.popup-field select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.popup-field input:hover,
+.popup-field select:hover {
+  border-color: #9ca3af;
+}
+
+/* Select Dropdown Styling */
+.popup-field select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23374151'><path d='M8 12L3 7h10z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Status Badge - Payment Report Style */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-completed, .status-done {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #22c55e;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #d97706;
+  border: 1px solid #f59e0b;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #ef4444;
+}
+
+/* Action Buttons - Payment Report Style */
+.popup-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  flex-wrap: wrap;
+}
+
+.popup-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  min-width: 140px;
+  flex: 0 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.popup-actions button:active {
+  transform: scale(0.95);
+}
+
+/* Update Button - Enhanced Interactive Style */
+.btn-update {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  color: #1e3a8a;
+  border: 2px solid #3b82f6;
+}
+
+.btn-update:hover {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.4);
+}
+
+/* Delete Button - Enhanced Interactive Style */
+.btn-delete {
+  background: linear-gradient(135deg, #fca5a5, #fecaca);
+  color: #991b1b;
+  border: 2px solid #ef4444;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #ef4444, #fca5a5);
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(252, 165, 165, 0.4);
+}
+
+/* Save Button - Payment Report Style */
+.btn-save {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-save:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* Cancel Button - Payment Report Style */
+.btn-cancel {
+  background: #6b7280;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #4b5563;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .action-popup {
+    width: 95%;
+    max-width: none;
+    min-width: auto;
+    margin: 10px;
+    padding: 24px;
+    min-height: auto;
+  }
+  
+  .popup-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .popup-form-row .popup-field {
+    margin-bottom: 24px;
+  }
+  
+  .popup-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .popup-actions button {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .popup-header h3 {
+    font-size: 1.4rem;
+  }
+  
+  .popup-field label,
+  .popup-field strong {
+    font-size: 0.95rem;
+  }
+  
+  .popup-field .field-value {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop optimization */
+@media (min-width: 1024px) {
+  .action-popup {
+    max-width: 750px;
+    min-width: 700px;
+    padding: 40px;
+  }
+  
+  .popup-header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+  }
+  
+  .popup-form-row {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .popup-field {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .action-popup {
+    width: 100%;
+    height: 100vh;
+    max-height: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 16px;
+  }
+  
+  .popup-header {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+}

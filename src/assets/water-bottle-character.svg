@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bottle -->
+  <path d="M180 100 h100 v300 h-100z" fill="#00d2ff" opacity="0.2"/>
+  <path d="M160 80 h140 v340 h-140z" fill="#00d2ff" opacity="0.1"/>
+  <path d="M200 50 h60 v400 h-60z" fill="#00d2ff"/>
+  
+  <!-- Water Splash -->
+  <path d="M180 250 q60-100 120 0" fill="#00d2ff" opacity="0.3"/>
+  <path d="M160 270 q80-120 160 0" fill="#00d2ff" opacity="0.2"/>
+  
+  <!-- Character -->
+  <circle cx="240" cy="200" r="40" fill="#FF9B9B"/>  <!-- Head -->
+  <path d="M220 240 h40 v80 h-40z" fill="#FF9B9B"/>  <!-- Body -->
+  <path d="M220 320 h15 v60 h-15z" fill="#333"/>     <!-- Left Leg -->
+  <path d="M245 320 h15 v60 h-15z" fill="#333"/>     <!-- Right Leg -->
+  <path d="M200 260 h20 v40 h-20z" fill="#FF9B9B"/>  <!-- Left Arm -->
+  <path d="M260 260 h20 v40 h-20z" fill="#FF9B9B"/>  <!-- Right Arm -->
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="150" r="10" fill="#00d2ff" opacity="0.5"/>
+  <circle cx="300" cy="180" r="15" fill="#00d2ff" opacity="0.3"/>
+  <circle cx="180" cy="400" r="12" fill="#00d2ff" opacity="0.4"/>
+</svg>

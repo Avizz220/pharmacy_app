@@ -1,0 +1,20 @@
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.signup-link .signup-btn {
+  color: #00d2ff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.signup-link .signup-btn:hover {
+  text-decoration: underline;
+}
