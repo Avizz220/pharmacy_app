@@ -1,5 +1,5 @@
 // API base URL - change this to match your backend server
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://focused-kindness-production.up.railway.app/api';
 
 // API service for authentication
 export const authAPI = {
